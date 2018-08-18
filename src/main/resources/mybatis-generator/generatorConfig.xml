@@ -2,10 +2,10 @@
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-
+<!--location="/Users/greggao/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar"/>-->
 <generatorConfiguration>
     <classPathEntry
-            location="/Users/greggao/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar"/>
+            location="C:/Users/Administrator/.IntelliJIdea2017.3/config/jdbc-drivers/MySQL Connector/J/5.1.46/mysql-connector-java-5.1.46.jar"/>
     <context id="my" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="false"/>
@@ -13,28 +13,167 @@
         </commentGenerator>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://47.106.149.105:3306/fangpu" userId="root"
+                        connectionURL="jdbc:mysql://47.106.149.105:3306/zjb1.0" userId="root"
                         password="123"/>
 
-        <javaModelGenerator targetPackage="com.renchaigao.fangpu.dao"
 
-        targetProject="/Users/goying/project/fangpu/javaCode/fangpu/src/main/java">
-        <!--targetProject="G:/00project/03fangpu/javaCode/fangpu/src/main/java">-->
+        <javaModelGenerator targetPackage="com.renchaigao.zujuba.dao"
+                            targetProject="F:/00project/zjb/code/server/data2.0/data20/src/main/java">
+            <!--targetProject="F:/00project/zjb/code/server/data2.0/zjb1/src/main/java">-->
+            <!--targetProject="G:/00project/01zjb/code/server/src/main/java">-->
+            <!--targetProject="G:/00project/03fangpu/javaCode/fangpuall/fangpuall/src/main/java"-->
+            <!--targetProject="/Users/goying/project/fangpu/javaCode/fangpu/src/main/java">-->
+            <!--targetProject="G:/00project/03fangpu/javaCode/fangpu/src/main/java">-->
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="resources.mapper"
-                         targetProject="/Users/goying/project/fangpu/javaCode/fangpu/src/main">
+                         targetProject="F:/00project/zjb/code/server/data2.0/data20/src/main">
+            <!--targetProject="F:/00project/zjb/code/server/data2.0/zjb1/src/main">-->
+            <!--targetProject="G:/00project/01zjb/code/server/src/main">-->
+            <!--targetProject="G:/00project/03fangpu/javaCode/fangpuall/fangpuall/src/main"-->
+            <!--targetProject="/Users/goying/project/fangpu/javaCode/fangpu/src/main">-->
             <!--targetProject="G:/00project/03fangpu/javaCode/fangpu/src/main">-->
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
-
-        <javaClientGenerator targetPackage="com.renchaigao.fangpu.dao.mapper"
-                             targetProject="/Users/goying/project/fangpu/javaCode/fangpu/src/main/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.renchaigao.zujuba.dao.mapper"
+                             targetProject="F:/00project/zjb/code/server/data2.0/data20/src/main/java" type="XMLMAPPER">
+            <!--targetProject="F:/00project/zjb/code/server/data2.0/zjb1/src/main/java" type="XMLMAPPER">-->
+            <!--targetProject="G:/00project/01zjb/code/server/src/main/java" type="XMLMAPPER">-->
+            <!--targetProject="G:/00project/03fangpu/javaCode/fangpuall/fangpuall/src/main/java" type="XMLMAPPER">-->
+            <!--targetProject="/Users/goying/project/fangpu/javaCode/fangpu/src/main/java" type="XMLMAPPER">-->
             <!--targetProject="G:/00project/03fangpu/javaCode/fangpu/src/main/java" type="XMLMAPPER">-->
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
+
+
+        <!--以下内容是组局吧data2.0-->
+
+        <!--1、function part-->
+        <!--<table tableName="address" domainObjectName="Address"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="permission" domainObjectName="Permission"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="spend" domainObjectName="Spend"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;2、game part&ndash;&gt;-->
+        <!--<table tableName="gameBasic" domainObjectName="GameBasic"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;3、rank part&ndash;&gt;-->
+        <!--<table tableName="userRank" domainObjectName="UserRank"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="storeRank" domainObjectName="StoreRank"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;4、store part&ndash;&gt;-->
+        <table tableName="store" domainObjectName="Store"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+        </table>
+        <!--&lt;!&ndash;5、team part&ndash;&gt;-->
+        <!--<table tableName="team" domainObjectName="Team"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--&lt;!&ndash;6、user part&ndash;&gt;-->
+        <!--<table tableName="player" domainObjectName="Player"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="userLogin" domainObjectName="UserLogin"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="user" domainObjectName="User"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="userOpenInfo" domainObjectName="UserOpenInfo"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="friend" domainObjectName="Friend"-->
+               <!--enableCountByExample="false" enableUpdateByExample="false"-->
+               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--以上内容是组局吧data2.0-->
+
+        <!--以下内容是组局吧-->
+        <!--<table tableName="userlogin" domainObjectName="UserLogin"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"/>-->
+        <!--<table tableName="user" domainObjectName="User"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="storeinfo" domainObjectName="StoreInfo"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="team" domainObjectName="Team"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="filterInfo" domainObjectName="FilterInfo"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--<property name="useActualColumnNames" value="true"/>-->
+        <!--</table>-->
+        <!--<table tableName="store" domainObjectName="Store"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"/>-->
+        <!--<table tableName="usertoken" domainObjectName="UserToken"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false"/>-->
+        <!--以上内容是组局吧-->
 
         <!--<table tableName="T_FEE_AGTBILL" domainObjectName="FeeAgentBill"
                enableCountByExample="false" enableUpdateByExample="false"
@@ -42,58 +181,93 @@
                selectByExampleQueryId="false"/>-->
 
         <!--<table tableName="userinfo" domainObjectName="UserInfo"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table> -->
+        <!--<table tableName="mynum" domainObjectName="MyNum"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table>-->
+        <!--<table tableName="myzan" domainObjectName="MyZan"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table> -->
+        <!--<table tableName="todaytenterm" domainObjectName="TodayTenTerm"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table>-->
+        <!--<table tableName="recordingnumlist" domainObjectName="RecordingNumList"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
 
         <!--<table tableName="userlogin" domainObjectName="UserLogin"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
 
         <!--<table tableName="terminfo" domainObjectName="TermInfo"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
         <!--<table tableName="recordinglist" domainObjectName="RecordingList"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
 
-        <table tableName="recordinginfo" domainObjectName="RecordingInfo"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-        </table>
+        <!--<table tableName="recordinginfo" domainObjectName="RecordingInfo"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table>-->
+        <!--<table tableName="todayrank" domainObjectName="TodayRank"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table>-->
+        <!--<table tableName="todaytermrank" domainObjectName="TodayTermRank"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table>-->
+        <!--<table tableName="todayrecordingrank" domainObjectName="TodayRecordingRank"-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--</table>-->
 
         <!--<table tableName="myterms" domainObjectName="MyTerms"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
 
         <!--<table tableName="myshare" domainObjectName="MyShare"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
 
         <!--<table tableName="myrecording" domainObjectName="MyRecording"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
         <!--</table>-->
 
         <!--<table tableName="oneanswer" domainObjectName="FeeBase"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--&lt;!&ndash;<columnRenamingRule searchString="^D_"-->
-                                <!--replaceString=""/>&ndash;&gt;-->
+        <!--enableCountByExample="false" enableUpdateByExample="false"-->
+        <!--enableDeleteByExample="false" enableSelectByExample="false"-->
+        <!--selectByExampleQueryId="false">-->
+        <!--&lt;!&ndash;<columnRenamingRule searchString="^D_"-->
+        <!--replaceString=""/>&ndash;&gt;-->
         <!--</table>-->
 
     </context>
